@@ -32,17 +32,20 @@ export const Contact = () => {
 
 const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const data = new FormData();
-    data.append("name", form.name);
-    data.append("email", form.email);
-    data.append("message", form.message);
-    data.append("_subject", "New Message from Portfolio");
-
     try {
       await fetch("https://formsubmit.co/chiongvindiesel269@gmail.com", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          Accept: "application/json" 
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _subject: "New Message from Portfolio",
+          _captcha: "false",
+        }),
       });
       toast({ title: "Message sent!", description: "Thanks, I'll get back to you soon." });
       setForm({ name: "", email: "", message: "" });

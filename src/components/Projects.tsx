@@ -3,13 +3,13 @@ import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import p1 from "@/assets/project-1.png";
 import p2 from "@/assets/project-2.png";
-//import p3 from "@/assets/project-3.jpg";
+import p3 from "@/assets/project-3.png";
 //import p4 from "@/assets/project-4.jpg";
 
 const projects = [
   { img: p1, title: "Code Master", desc: "An interactive programming quiz game with 30 questions, leaderboard system, and retro pixel art design.", href: "https://github.com/CH10N2005/Code-master" },
   { img: p2, title: "BuildIt Pro", desc: "a vibe-coded web-based construction project management system that helps contractors and managers streamline project tracking through a clean and intuitive interface. It allows users to create and organize construction projects by capturing essential details such as project name, location, client, and budget — all designed for real-world field use.", href: "#" },
-  //{ img: p3, title: "Brand Identity Kit", desc: "Canva-based visual identity system for local startups and freelancers.", href: "#" },
+  { img: p3, title: "Student Record System", desc: "A web-based Student Record System built with PHP and MySQL that allows administrators to efficiently manage student information through a clean and secure interface. It enables users to perform full CRUD operations — adding, viewing, editing, and deleting student records — with features like search and filter, dashboard analytics, and session-based authentication designed for real-world academic use..", href: "#" },
   //{ img: p4, title: "Python Automation", desc: "Scripts and tools that automate repetitive academic and work tasks.", href: "#" },
 ];
 
