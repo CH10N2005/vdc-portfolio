@@ -9,7 +9,7 @@ import p3 from "@/assets/project-3.png";
 const projects = [
   { img: p1, title: "Code Master", desc: "An interactive programming quiz game with 30 questions, leaderboard system, and retro pixel art design.", href: "https://github.com/CH10N2005/Code-master" },
   { img: p2, title: "BuildIt Pro", desc: "a vibe-coded web-based construction project management system that helps contractors and managers streamline project tracking through a clean and intuitive interface. It allows users to create and organize construction projects by capturing essential details such as project name, location, client, and budget — all designed for real-world field use.", href: "#" },
-  { img: p3, title: "Student Record System", desc: "A web-based Student Record System built with PHP and MySQL that allows administrators to efficiently manage student information through a clean and secure interface. It enables users to perform full CRUD operations — adding, viewing, editing, and deleting student records — with features like search and filter, dashboard analytics, and session-based authentication designed for real-world academic use..", href: "#" },
+  { img: p3, title: "Student Record System", desc: "A web-based Student Record System built with PHP and MySQL that allows administrators to securely manage and perform CRUD operations on student records with a clean and intuitive interface.", href: "https://github.com/CH10N2005/Student-Record-System" },
   //{ img: p4, title: "Python Automation", desc: "Scripts and tools that automate repetitive academic and work tasks.", href: "#" },
 ];
 
@@ -43,7 +43,7 @@ export const Projects = () => (
                 View on GitHub <ArrowUpRight className="h-4 w-4" />
               </span>
             </div>
-            <div className="absolute left-5 top-5 rounded-full glass px-3 py-1 text-xs font-semibold uppercase tracking-wider opacity-100 transition-opacity group-hover:opacity-0">
+            <div className="absolute left-5 top-5 rounded-full glass px-3 py-1 text-xs font-semibold uppercase tracking-wider opacity-100 transition-opacity group-hover:opacity-0 text-primary">
               0{i + 1}
             </div>
           </motion.a>
